@@ -62,6 +62,10 @@ dependencies {
     // Gson Converter for Retrofit
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    // Coroutine support for Retrofit
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
+
+
 }

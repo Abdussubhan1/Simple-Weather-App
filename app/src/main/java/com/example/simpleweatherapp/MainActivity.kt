@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.launch
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -63,7 +64,7 @@ interface RetrofitInterface {
         @Query("q") city: String,
         @Query("appid") apiKey: String
     )
-            : retrofit2.Response<WeatherResponse>
+            : Response<WeatherResponse>
 }
 
 object ServiceBuilder {
